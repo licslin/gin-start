@@ -12,8 +12,6 @@ https://github.com/go-sql-driver/mysql
 https://github.com/jmoiron/sqlx
 */
 
-
-
 func main() {
 	//创建gin实例
 	r := gin.Default()
@@ -25,16 +23,19 @@ func main() {
 	r.Run() //8080
 }
 
-
 //gin的请求路由
 //1.多种请求类型
 //2.绑定静态文件夹  可以作为静态资源服务器使用
 //3.参数作为URL  RESTFUL
 //4.泛绑定
 
-
 //获取请求参数
 //get请求参数获取
 //post请求参数获取
 //body值获取
 //参数绑定结构体获取
+
+//gin补充
+//优雅关停
+//模板渲染
+//自动证书配置(证书过期自动续约功能)

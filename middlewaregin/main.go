@@ -23,6 +23,7 @@ func main() {
 
 	r := gin.New()
 	//基于控制台输出日志  打印请求路径和状态码等信息
+	//gin.Recovery()中间件可以捕获错误  不会导致main方法停止 进程挂掉
 	//r.Use(gin.Logger(),gin.Recovery())
 	r.Use(gin.Logger())
 	r.GET("/test", func(c *gin.Context) {
@@ -33,3 +34,5 @@ func main() {
 	r.Run()
 
 }
+
+//自定义中间件
